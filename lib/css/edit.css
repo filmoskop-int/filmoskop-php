@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+menu {
+	display: none;
+}
+textarea:focus {
+	outline: none;
+}
+
+html,
+body,
+.Editor {
+	height: 100%;
+}
+
+.Editor {
+	display: table;
+	width: 100%;
+}
+.Editor__box {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.Editor__box + .Editor__box {
+	border-left: 1px solid #ccc;
+}
+
+.Editor__field {
+	box-sizing: border-box;
+	resize: horizontal;
+	width: 50vh;
+	font: inherit;
+	font-family: consolas, monospace;
+	border: 0;
+	max-height: 100vh;
+}
+
+.Editor__view {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	vertical-align: middle;
+}
+
+.Editor__box--img,
+.Editor__box--edit {
+	width: 1px;
+}
+
+.Editor__img {
+	max-width: 100px;
+	max-height: 100px;
+	object-fit: contain;
+}
+
+.Editor__box--view {
+	position: relative;
+}
+.Editor__links {
+	position: absolute;
+	top: .5em;
+	left: 1em;
+	right: 1em;
+}
+.Editor__link {
+	color: #9c2d24;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 2em;
+	text-decoration: none;
+	opacity: 0;
+	transition: .2s;
+	will-change: opacity;
+}
+.Editor__link:hover {
+	opacity: 1;
+}
+.Editor__link--edit {
+	float: right;
+}
+
+.Editor--disabled .Editor__panel {
+	display: none;
+}
+.Editor--disabled .Editor__box--view {
+	border-left-width: 0;
+	padding-right: 0;
+	padding-left: 0;
+}

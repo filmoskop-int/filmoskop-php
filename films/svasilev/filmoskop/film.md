@@ -5,11 +5,11 @@
 
 ---
 
-<!-- .slide: data-background-transition="slide" data-background-image="filmoskop.jpg" data-background-size="contain" -->
+&lt;!-- .slide: data-background-transition=&quot;slide&quot; data-background-image=&quot;filmoskop.jpg&quot; data-background-size=&quot;contain&quot; --&gt;
 
 Комментарий:
 Это небольшой инструмент для воспроизведения диафильмов.
-Он, в отличие от более сложного диапроекта изначально создавался максимально доступным.
+Он, в отличие от более сложного диапроектора изначально создавался максимально доступным.
 
 ---
 
@@ -40,7 +40,7 @@ films
 ```
 
 Комментарий:
-Так файлы фильмов выглядят в файловой стистеме.
+Так файлы фильмов выглядят в файловой системе.
 
 ---
 
@@ -79,11 +79,11 @@ films
 
 ### Цитатные
 
-Вопрос: <q>А нельзя по-нормальному сделать?</q>
+Вопрос: &lt;q&gt;А нельзя по-нормальному сделать?&lt;/q&gt;
 
-> Нет, это Битрикс.
->
-> — <cite>Александр Воротников</cite>
+&gt; Нет, это Битрикс.
+&gt;
+&gt; — &lt;cite&gt;Александр Воротников&lt;/cite&gt;
 
 ---
 
@@ -98,7 +98,7 @@ films
 
 ---
 
-<!-- .slide: id="pussy" -->
+&lt;!-- .slide: id=&quot;pussy&quot; --&gt;
 
 ![](cat.jpg)
 
@@ -114,67 +114,21 @@ films
 
 ---
 
-<iframe class="stretch" src="https://player.vimeo.com/video/37328349" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-Комментарий:
-И видео
-
----
-
-### Группировка
-#### Первый слайд в группе
-
-Комментарий:
-Для структурированности слайды можно объединять в группы. Во время воспроизведения они, в отличие от обычных слайдов, выстраиваются в столбик.
-
------
-
-#### Второй слайд в группе
-
----
-
 ### Фрагменты
 
-Слайд можно показывать по частям <!-- .element: class="fragment" data-fragment-index="0" -->
+Слайд можно показывать по частям &lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;0&quot; --&gt;
 
-<p class="fragment" data-fragment-index="1">
+&lt;p class=&quot;fragment&quot; data-fragment-index=&quot;1&quot;&gt;
 	А можно показать всё
-	<span class="fragment highlight-red" data-fragment-index="2">и сразу</span>
-</p>
+	&lt;span class=&quot;fragment highlight-red&quot; data-fragment-index=&quot;2&quot;&gt;и сразу&lt;/span&gt;
+&lt;/p&gt;
 
 ---
 
-#### Внутренние ссылки
-
-[Котёнок](#/pussy)
-
-Комментарий:
-Можно переходить по ссылке на любой слайд в фильме. Чтобы упростить указание ссылок, можно добавить идентификатор слайду.
+### [Посмотрим внутрь](film.md) &lt;!-- .element: download=&quot;film.md&quot; --&gt;
 
 ---
 
-#### Увеличение
+&lt;!-- .slide: data-background=&quot;#c00&quot; --&gt;
 
-[Котёнок](#/pussy)
-
-Комментарий:
-Для увеличения любого элемента слайда, нужно нажать на элемент с зажатой клавишей `Alt`
-
----
-
-#### Режим докладчика
-
-[Котёнок](#/pussy)
-
-Комментарий:
-В этом режиме отображается следующий слайд, можно переключать текущий и прочесть комментарий к слайду. Ещё отсчитывается время воспроизведения. Для перехода нажмите `Ы`
-
----
-
-### [Посмотрим внутрь](film.md) <!-- .element: download="film.md" -->
-
----
-
-<!-- .slide: data-background="#c00" -->
-
-<h1 style="color:#ffd700;">Слава ЦСС!</h1>
+&lt;h1 style=&quot;color:#ffd700;&quot;&gt;Слава ЦСС!&lt;/h1&gt;
