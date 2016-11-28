@@ -43,13 +43,19 @@ if (count($_POST)) {
 	exit();
 };
 
+$base = '../films/'. $author .'/'. $filmName .'/';
+
+if (preg_match('/\/$/', $_SERVER['QUERY_STRING'])) {
+	$base = '../'. $base;
+};
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="windows-1251">
 	<title><?=$filmName?></title>
-	<base href="../../../films/<?=$author .'/'. $filmName?>/">
+	<base href="<?=$base?>">
 	<link rel="stylesheet" href="../../../lib/css/edit.css">
 </head>
 <body>

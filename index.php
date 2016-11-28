@@ -11,7 +11,7 @@ if (!isset($q) || !$q || count(explode('/', $q)) < 2) {
 }
 
 // отображаем фильм
-elseif (count(explode('/', $q)) === 2) {
+elseif (count(explode('/', $q)) > 1) {
 	include 'lib/edit.php';
 };
 

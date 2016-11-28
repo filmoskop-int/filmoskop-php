@@ -3165,7 +3165,9 @@
 					if( indexv > 0 ) url += '/' + indexv;
 				}
 
-				window.location.hash = url;
+				// СДЕЛАТЬ
+				// вернуть, когда не будет вызывать ошибку
+				// window.location.hash = url;
 			}
 		}
 

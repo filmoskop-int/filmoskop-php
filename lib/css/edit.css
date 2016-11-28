@@ -29,6 +29,12 @@ body,
 .Editor__box + .Editor__box {
 	border-left: 1px solid #ccc;
 }
+.Editor__box:empty {
+	display: none;
+}
+.Editor__box:empty + .Editor__box {
+	border-left-width: 0;
+}
 
 .Editor__field {
 	box-sizing: border-box;
