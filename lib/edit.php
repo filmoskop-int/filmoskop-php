@@ -69,7 +69,7 @@ if (preg_match('/\/$/', $_SERVER['QUERY_STRING'])) {
 $filmData = scandir($filmPath);
 
 foreach ($filmData as $key => $value) {
-	if (preg_match('/\.(png|jpg|jpeg|gif)/', $value)) {
+	if (preg_match('/\.(png|PNG|jpg|jpeg|gif)/', $value)) {
 		echo '<img class="Editor__img" contextmenu="context-img" src="'. $value .'">';
 	};
 };

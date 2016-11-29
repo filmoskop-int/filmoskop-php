@@ -16,12 +16,15 @@ body,
 }
 
 .Editor {
-	display: table;
+	display: flex;
+	align-content: stretch;
+	align-items: stretch;
 	width: 100%;
 }
 .Editor__box {
-	display: table-cell;
-	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-right: 10px;
 	padding-left: 10px;
 }
@@ -53,11 +56,10 @@ body,
 	vertical-align: middle;
 }
 
-.Editor__box--img,
-.Editor__box--edit {
-	width: 1px;
+.Editor__box--img {
+	flex-direction: column;
+	overflow: auto;
 }
-
 .Editor__img {
 	max-width: 100px;
 	max-height: 100px;
@@ -65,6 +67,7 @@ body,
 }
 
 .Editor__box--view {
+	flex: 1 0 auto;
 	position: relative;
 }
 .Editor__links {
