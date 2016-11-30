@@ -57,6 +57,7 @@ if (preg_match('/\/$/', $_SERVER['QUERY_STRING'])) {
 	<title><?=$filmName?></title>
 	<base href="<?=$base?>">
 	<link rel="stylesheet" href="../../../lib/css/edit.css">
+	<link href="../../../favicon.ico" rel="icon" type="image/x-icon" /> 
 </head>
 <body>
 

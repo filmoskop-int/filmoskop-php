@@ -101,6 +101,7 @@ $authors = scandir($filmsDir);
 			border-bottom: 1px dotted;
 		}
 	</style>
+	<link href="favicon.ico" rel="icon" type="image/x-icon" /> 
 </head>
 <?
 
