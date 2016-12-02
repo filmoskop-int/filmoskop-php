@@ -143,30 +143,32 @@ foreach ($authors as $key => $author) {
 <a class="Add Add--folder" href="#">Добавить папку</a>
 
 <script>
-document.querySelector('.User__add').addEventListener('click', function (e) {
-	e.preventDefault();
+[].forEach.call(document.querySelectorAll('.User__add'), function (add) {
+	add.addEventListener('click', function (e) {
+		e.preventDefault();
 
-	var name = prompt('Введите название нового фильма', '');
+		var name = prompt('Введите название нового фильма', '');
 
-	if (!name) { return; };
+		if (!name) { return; };
 
-	var data = new FormData();
+		var data = new FormData();
 
-	data.append('type', 'addFilm');
-	data.append('name', name);
-	data.append('author', this.closest('.User').id);
+		data.append('type', 'addFilm');
+		data.append('name', name);
+		data.append('author', this.closest('.User').id);
 
-	fetch('', {
-		method: 'POST',
-		body: data
-	}).then(function (response) {
-		if (response.ok) {
-			response.text().then(function (data) {
-				window.location.reload(true);
-			});
-		};
+		fetch('', {
+			method: 'POST',
+			body: data
+		}).then(function (response) {
+			if (response.ok) {
+				response.text().then(function (data) {
+					window.location.reload(true);
+				});
+			};
+		});
 	});
-});
+})
 
 document.querySelector('.Add--folder').addEventListener('click', function (e) {
 	e.preventDefault();

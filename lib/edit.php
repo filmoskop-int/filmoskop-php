@@ -15,7 +15,7 @@ $filmPathFull = preg_replace('/\//', DIRECTORY_SEPARATOR, $filmPathFull);
 if (count($_FILES)) {
 	$fileName = base_convert(time(), 10, 36) . iconv('UTF-8', 'windows-1251', $_POST['ext']);
 
-	if (move_uploaded_file($_FILES['img']['tmp_name'], $filmPathFull .'\\'. $fileName)) {
+	if (move_uploaded_file($_FILES['img']['tmp_name'], $filmPathFull . DIRECTORY_SEPARATOR . $fileName)) {
 	}
 	else {
 		echo 'File upload error';
